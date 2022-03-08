@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee form</title>
+    <style>
+        form{
+            text-align: center;
+            
+        }
+        input[type="checkbox"]:checked {
+  background: blue;
+  color: white;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  background: lightgray;
+  height: 16px;
+  width: 16px;
+  border: 1px solid white;
+  color: white;
+}
+
+input[type="checkbox"]:after {
+  content: ' ';
+  position: relative;
+  left: 40%;
+  top: 20%;
+  width: 15%;
+  height: 40%;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(50deg);
+  display: none;
+}
+
+input[type="checkbox"]:checked:after {
+  display: block;
+}
+    </style>
+</head>
+<body>
+
+<form>
+    <h1>Employee Intrests Survey Form</h1>
+    
+    
+    <label for="name">Enter Your Name : </label>
+    <input id="name" type="text">
+    <br>
+    <br>
+    <label for="department">Enter Your Department : </label>
+    <input id="department" type="text">
+    <br>
+    <br>
+
+    <label for="info">Tell us a little about yourself : </label>   
+    <textarea name="" id="info" cols="30" rows="4"></textarea>
+    <br>
+    <br>
+
+    <label for="rd">Do you exercise at Home ?</label>
+    <input type="radio" name="radio" id="rd"> yes
+    <input type="radio" name="radio" id="rd"> no 
+    <br>
+    <br>
+
+    <label for="cb">How do you like to read about your favorite topics ? </label> <br> <br>
+    <input type="checkbox" name="" id="cb">Books
+    <input type="checkbox" name="" id="cb">Online resources
+    <input type="checkbox" name="" id="cb">Phone Apps
+    <input type="checkbox" name="" id="cb">Magazines
+<br>
+<br>
+    <label for="genre">What genre of movies do you like ?</label>
+    <input list="genre" name="genre" size="8">
+                                <datalist id="genre">
+                                   <option value="Comedy">
+                                   <option value="Action">
+                                   <option value="Drama">
+                                   <option value="Fantasy">
+                                   <option value="sci-fiction">
+                                 </datalist>
+                               
+<br>
+<br>
+<input type="button" value="submit form">
+</form>
+
+</body>
+</html>
